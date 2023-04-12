@@ -1,0 +1,11 @@
+/*Program to read two integer and two floating point numbers.*/
+
+#include <stdio.h>
+int main(){
+    int a,b;
+    float x,y;
+    printf("enter the integer numbers: ");
+    scanf("%d%d", &a,&b);
+    printf("enter the floating point numbers: ");
+    scanf("%f%f",&x,&y);
+}
