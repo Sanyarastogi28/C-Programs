@@ -1,0 +1,41 @@
+/*Write a Program to read two numbers and an operator (+, -, *, /) which performs the specified operation and display the result.*/
+
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+  float a,b,res;
+  char op;
+  printf("enter the operator(+,-,/,*): ");
+  scanf("%c",&op);
+  printf("enter the two numbers: ");
+  scanf("%f",&a);
+  printf("enter the two numbers: ");
+  scanf("%f",&b);
+  //fflush(stdin);
+ 
+ 
+  
+  switch(op)
+  {
+      case '+':
+      res=a+b;
+      printf("print the sum:%f ", res);
+      break;
+      case '-':
+      res=a-b;
+      printf("subtraction:%f ",res);
+      break;
+      case'*':
+      res=a*b;
+      printf("multiplication:%f ",res);
+      break;
+      case '/':
+      res=a/b;
+      printf("division:%f ", res);
+      break;
+      default:
+      printf("\ninvalid operator");
+
+  }
+}
